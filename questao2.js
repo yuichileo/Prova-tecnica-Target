@@ -9,14 +9,14 @@ function fibonacci (){
       B = A;
 
       if (verifica == (A || B || C)) {
-        return console.log('pertence');
+        return console.log('Este valor pertence à sequência');
       }
       
       else {
-      return console.log('nao pertence');
+      return console.log('Este valor não pertence à sequência');
       }
 
-    
+     
     }
 
     }

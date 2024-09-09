@@ -6,19 +6,17 @@ let media = 0;
 
 for(dia=0; dia<data.length; dia++){
     
-   
-   if(data[dia].valor>0){
+    if(data[dia].valor>0){
     diasFaturamento++;
+}
 
-   }
     total = Number(data[dia].valor) + total;
-    
+}
 
+    media = total / diasFaturamento;
+    console.log(media);
 }
-media = total / diasFaturamento;
-  console.log(media);
-}
-faturamento();
+mediaFaturamento();
 
 function minimo(){
     const data = require('./dados.json');
@@ -35,13 +33,13 @@ minimo();
 
 function maximo(){
     const data = require('./dados.json');
-    let menorValor = data[0].valor;
+    let maiorValor = data[0].valor;
     for (dia=0; dia<data.length; dia++){
-        if(data[dia].valor>menorValor){
-            menorValor = data[dia].valor;
+        if(data[dia].valor>maiorValor){
+            maiorValor = data[dia].valor;
         }
     
     }
-console.log(menorValor);
+console.log(maiorValor);
 }
 maximo();

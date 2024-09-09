@@ -12,4 +12,4 @@ function inverter(inv){
      
 
 
-inverter('leo');
+inverter('abc'); // inserir a string a ser invertida
